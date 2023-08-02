@@ -1,0 +1,113 @@
+.main__medias {
+    margin-top: 101px;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    background: linear-gradient(90deg, #000000 40%, rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0) 67.73%);
+    padding: 30px 50px;
+    @include media(800){
+       
+    }
+
+    &-block {
+        min-height: 600px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        @include media(800){
+            width: 100%;
+       
+         
+        }
+    }
+
+    &-right {
+            position: absolute;
+            top: 30px;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        @include media(800){
+        display: none;
+       
+        }
+
+        & img {
+            width: 311px;
+            height: 462px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+        }
+    }
+
+    &-poster {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 60%;
+        object-fit: cover;
+        z-index: -1;
+        filter: blur(10px);
+
+    }
+
+    &-left {
+        width: 50%;
+        @include media(800){
+            width: 100%;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 59px;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+            @include media(800){
+              text-align: center;
+            }
+        }
+
+        &-text {
+            font-size: 20px;
+            line-height: 30px;
+            color: #FFFFFF;
+            margin-bottom: 25px;
+        }
+
+        &-janr {
+            margin-bottom: 100px;
+
+            & span {
+                font-family: 'Montserrat';
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                color: rgba(255, 255, 255, 0.6);
+            }
+        }
+    }
+
+    &-actors {
+        width: 100%;
+    }
+
+    &-title {
+        font-size: 16px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+}
+
+.main__medias-casts .main__info-content-actors {
+    max-width: none;
+    justify-content: center;
+}

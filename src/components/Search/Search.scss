@@ -1,0 +1,20 @@
+.main__search {
+    margin-top: 130px;
+    &-input {
+        // width: 1320px;
+        // height: 61px;
+        padding: 20px;
+        width: 100%;
+        left: 300px;
+        top: 120px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: #141414;
+        &::placeholder {
+            color: #141414;
+        }
+    }
+}
